@@ -7,7 +7,7 @@
 	<RootNamespace>NPOI.OOXML</RootNamespace>
 	<SignAssembly>true</SignAssembly>
 	<AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
-	<PackageId>NPOI</PackageId>
+	<PackageId>NPOI.OOXML</PackageId>
 	<RepositoryUrl>https://github.com/tonyqus/npoi</RepositoryUrl>	
   </PropertyGroup>
 
