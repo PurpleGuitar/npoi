@@ -509,8 +509,17 @@ namespace NPOI.XWPF.UserModel
                     if (o is CT_FtnEdnRef)
                     {
                         CT_FtnEdnRef ftn = (CT_FtnEdnRef)o;
-                        String footnoteRef = ftn.DomNode.LocalName.Equals("footnoteReference") ?
-                            "[footnoteRef:" + ftn.id + "]" : "[endnoteRef:" + ftn.id + "]";
+                        string footnoteRef;
+                        if (ftn.DomNode != null)
+                        {
+                            footnoteRef = ftn.DomNode.LocalName.Equals("footnoteReference") ?
+                                "[footnoteRef:" + ftn.id + "]" : "[endnoteRef:" + ftn.id + "]";
+                        }
+                        else
+                        {
+                            footnoteRef = ftn.isEndnote ?
+                                "[endnoteRef:" + ftn.id + "]" : "[footnoteRef:" + ftn.id + "]";
+                        }
                         text.Append(footnoteRef);
                     }
                 }

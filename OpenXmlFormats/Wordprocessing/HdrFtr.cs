@@ -1858,6 +1858,9 @@ namespace NPOI.OpenXmlFormats.Wordprocessing
         private bool customMarkFollowsFieldSpecified;
 
         private string idField;
+
+        private bool isEndnoteField = true;
+
         public static CT_FtnEdnRef Parse(XmlNode node, XmlNamespaceManager namespaceManager)
         {
             if (node == null)
@@ -1891,6 +1894,19 @@ namespace NPOI.OpenXmlFormats.Wordprocessing
             set
             {
                 this.customMarkFollowsField = value;
+            }
+        }
+
+        [XmlIgnore]
+        public bool isEndnote
+        {
+            get
+            {
+                return this.isEndnoteField;
+            }
+            set
+            {
+                this.isEndnoteField = value;
             }
         }
 
