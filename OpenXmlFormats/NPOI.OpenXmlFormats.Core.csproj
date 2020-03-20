@@ -6,7 +6,7 @@
 	<AssemblyName>NPOI.OpenXmlFormats</AssemblyName>
 	<SignAssembly>true</SignAssembly>
 	<AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
-	<PackageId>NPOI</PackageId>
+	<PackageId>NPOI.OpenXmlFormats</PackageId>
 	<RepositoryUrl>https://github.com/tonyqus/npoi</RepositoryUrl>	
   </PropertyGroup>
 

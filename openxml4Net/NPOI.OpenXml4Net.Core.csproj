@@ -6,7 +6,7 @@
 	<AssemblyName>NPOI.OpenXml4Net</AssemblyName>
 	<SignAssembly>true</SignAssembly>
 	<AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
-	<PackageId>NPOI</PackageId>
+	<PackageId>NPOI.OpenXml4Net</PackageId>
 	<RepositoryUrl>https://github.com/tonyqus/npoi</RepositoryUrl>	
   </PropertyGroup>
 
